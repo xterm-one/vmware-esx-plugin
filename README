@@ -1,1 +1,1 @@
-The ESX revert to snapshot and start plugin for Jenkins CI.
+The ESX revert to snapshot and start plugin for Jenkins CI.  The revert to snapshot can be done either before or after the build.
