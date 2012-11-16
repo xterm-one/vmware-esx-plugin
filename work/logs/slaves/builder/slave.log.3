@@ -1,0 +1,19 @@
+Connecting to builder
+ERROR: Access is denied. See http://wiki.jenkins-ci.org/display/JENKINS/Windows+slaves+fail+to+start+via+DCOM for more information about how to resolve this.
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0morg.jinterop.dcom.common.JIException: Message not found for errorCode: 0x00000005
+	at org.jinterop.dcom.core.JIComServer.init(JIComServer.java:542)
+	at org.jinterop.dcom.core.JIComServer.initialise(JIComServer.java:458)
+	at org.jinterop.dcom.core.JIComServer.<init>(JIComServer.java:427)
+	at org.jvnet.hudson.wmi.WMI.connect(WMI.java:59)
+	at hudson.os.windows.ManagedWindowsServiceLauncher.launch(ManagedWindowsServiceLauncher.java:219)
+	at hudson.slaves.SlaveComputer$1.call(SlaveComputer.java:200)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: rpc.FaultException: Received fault. (unknown)
+	at rpc.ConnectionOrientedEndpoint.call(ConnectionOrientedEndpoint.java:142)
+	at rpc.Stub.call(Stub.java:112)
+	at org.jinterop.dcom.core.JIComServer.init(JIComServer.java:538)
+	... 10 more

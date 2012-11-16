@@ -1,0 +1,135 @@
+[11/01/12 10:30:54] [SSH] Opening SSH connection to selenium:22.
+[11/01/12 10:30:54] [SSH] Authenticating as root/******.
+[11/01/12 10:30:54] [SSH] Authentication successful.
+[11/01/12 10:30:54] [SSH] The remote users environment is:
+BASH=/bin/bash
+BASHOPTS=cmdhist:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="1" [2]="2" [3]="1" [4]="release" [5]="x86_64-redhat-linux-gnu")
+BASH_VERSION='4.1.2(1)-release'
+CVS_RSH=ssh
+DIRSTACK=()
+EUID=0
+GROUPS=()
+G_BROKEN_FILENAMES=1
+HOME=/root
+HOSTNAME=localhost.localdomain
+HOSTTYPE=x86_64
+ID=0
+IFS=$' \t\n'
+LANG=en_US.UTF-8
+LESSOPEN='|/usr/bin/lesspipe.sh %s'
+LOGNAME=root
+MACHTYPE=x86_64-redhat-linux-gnu
+MAIL=/var/mail/root
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+PIPESTATUS=([0]="0")
+PPID=4625
+PS4='+ '
+PWD=/root
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+SELINUX_LEVEL_REQUESTED=
+SELINUX_ROLE_REQUESTED=
+SELINUX_USE_CURRENT_RANGE=
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=1
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_CLIENT='172.18.160.22 63745 22'
+SSH_CONNECTION='172.18.160.22 63745 172.18.160.34 22'
+TERM=dumb
+UID=0
+USER=root
+_=/etc/bashrc
+__udisks () 
+{ 
+    local IFS='
+';
+    local cur="${COMP_WORDS[COMP_CWORD]}";
+    if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--show-info" ]; then
+        COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+    else
+        if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--inhibit-polling" ]; then
+            COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+        else
+            if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--mount" ]; then
+                COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+            else
+                if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--unmount" ]; then
+                    COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                else
+                    if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--detach" ]; then
+                        COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                    else
+                        if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--ata-smart-refresh" ]; then
+                            COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                        else
+                            if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--ata-smart-simulate" ]; then
+                                _filedir || return 0;
+                            else
+                                if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--set-spindown" ]; then
+                                    COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                                else
+                                    if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--poll-for-media" ]; then
+                                        COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                                    else
+                                        COMPREPLY=($(IFS=: compgen -W "--dump:--inhibit-polling:--inhibit-all-polling:--enumerate:--enumerate-device-files:--monitor:--monitor-detail:--show-info:--help:--mount:--mount-fstype:--mount-options:--unmount:--unmount-options:--detach:--detach-options:--ata-smart-refresh:--ata-smart-wakeup:--ata-smart-simulate:--set-spindown:--set-spindown-all:--spindown-timeout:--poll-for-media" -- $cur));
+                                    fi;
+                                fi;
+                            fi;
+                        fi;
+                    fi;
+                fi;
+            fi;
+        fi;
+    fi
+}
+[11/01/12 10:30:54] [SSH] Checking java version of java
+[11/01/12 10:31:16] [SSH] Checking java version of /usr/bin/java
+[11/01/12 10:31:16] [SSH] Checking java version of /usr/java/default/bin/java
+[11/01/12 10:31:16] [SSH] Checking java version of /usr/java/latest/bin/java
+[11/01/12 10:31:16] [SSH] Checking java version of /usr/local/bin/java
+[11/01/12 10:31:16] [SSH] Checking java version of /usr/local/java/bin/java
+[11/01/12 10:31:16] [SSH] Checking java version of /tmp/jdk/bin/java
+hudson.util.IOException2: Could not find any known supported java version in [java, /usr/bin/java, /usr/java/default/bin/java, /usr/java/latest/bin/java, /usr/local/bin/java, /usr/local/java/bin/java, /tmp/jdk/bin/java], and we also failed to install JDK as a fallback
+	at hudson.plugins.sshslaves.SSHLauncher.resolveJava(SSHLauncher.java:350)
+	at hudson.plugins.sshslaves.SSHLauncher.launch(SSHLauncher.java:288)
+	at hudson.slaves.SlaveComputer$1.call(SlaveComputer.java:200)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.io.IOException: Sorry, this connection is closed.
+	at com.trilead.ssh2.transport.TransportManager.sendMessage(TransportManager.java:642)
+	at com.trilead.ssh2.channel.ChannelManager.openSessionChannel(ChannelManager.java:582)
+	at com.trilead.ssh2.Session.<init>(Session.java:40)
+	at com.trilead.ssh2.Connection.openSession(Connection.java:1104)
+	at com.trilead.ssh2.Connection.exec(Connection.java:1516)
+	at hudson.plugins.sshslaves.SSHLauncher.attemptToInstallJDK(SSHLauncher.java:377)
+	at hudson.plugins.sshslaves.SSHLauncher.resolveJava(SSHLauncher.java:348)
+	... 7 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.fill_buffer(CipherInputStream.java:41)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.internal_read(CipherInputStream.java:52)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.getBlock(CipherInputStream.java:79)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.read(CipherInputStream.java:108)
+	at com.trilead.ssh2.transport.TransportConnection.receiveMessage(TransportConnection.java:232)
+	at com.trilead.ssh2.transport.TransportManager.receiveLoop(TransportManager.java:677)
+	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:475)
+	... 1 more
+[11/01/12 10:31:16] [SSH] Connection closed.

@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: build-esx-plugin
+Long-Name: VMWare ESX Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/vSphere+Cloud+Plugin
+Plugin-Version: 1.0
+Hudson-Version: 1.488
+Jenkins-Version: 1.488
+Plugin-Developers: Phil Soliz:xterm:phillip.soliz@mantech.com
+Libraries: D:\UNITY\Projects\jenkins\target\classes,C:\Users\xterm\.m2
+ \repository\org\kohsuke\stapler\json-lib\2.1-rev7\json-lib-2.1-rev7.j
+ ar,C:\Users\xterm\.m2\repository\commons-beanutils\commons-beanutils\
+ 1.7.0\commons-beanutils-1.7.0.jar,C:\Users\xterm\.m2\repository\commo
+ ns-logging\commons-logging\1.1\commons-logging-1.1.jar,C:\Users\xterm
+ \.m2\repository\commons-collections\commons-collections\3.2\commons-c
+ ollections-3.2.jar,C:\Users\xterm\.m2\repository\commons-lang\commons
+ -lang\2.3\commons-lang-2.3.jar,C:\Users\xterm\.m2\repository\net\sf\e
+ zmorph\ezmorph\1.0.3\ezmorph-1.0.3.jar,C:\Users\xterm\.m2\repository\
+ com\cloudbees\thirdparty\vijava\5.0.0\vijava-5.0.0.jar,C:\Users\xterm
+ \.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar,C:\Users\xterm\.m2\
+ repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar,C:\Users\xter
+ m\.m2\repository\com\jcraft\jsch\0.1.49\jsch-0.1.49.jar
+Resource-Path: D:\UNITY\Projects\jenkins\src\main\webapp
+

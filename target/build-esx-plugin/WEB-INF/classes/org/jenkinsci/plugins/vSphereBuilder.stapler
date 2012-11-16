@@ -1,0 +1,2 @@
+#Tue Nov 06 16:50:54 CST 2012
+constructor=vsHost,vmName,username,password,snapname,waitpause,waitfortools,runOrder,buildstep

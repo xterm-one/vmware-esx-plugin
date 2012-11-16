@@ -1,0 +1,181 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAABb85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building remotely on [8mha:AAAAnB+LCAAAAAAAAABb85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6walA4zNLcwFqwEuexwAAAA==[0mSelenium in workspace /tmp/workspace/JOBBER
+No build steps declared
+Disconnect the slave...
+Revert to snapshot...
+Power on slave...
+Pause for vmware tools...
+Pause for configured wait time...
+Connecting to the target...
+Wait until connectected...
+Waiting for slave to come back online...
+Get declared fields...
+Set the channel to correct value...
+[JOBBER] $ /bin/sh -xe /tmp/hudson3307591126361093448.sh
++ ps -aef
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 12:57 ?        00:00:01 /sbin/init
+root         2     0  0 12:57 ?        00:00:00 [kthreadd]
+root         3     2  0 12:57 ?        00:00:00 [migration/0]
+root         4     2  0 12:57 ?        00:00:00 [ksoftirqd/0]
+root         5     2  0 12:57 ?        00:00:00 [migration/0]
+root         6     2  0 12:57 ?        00:00:00 [watchdog/0]
+root         7     2  0 12:57 ?        00:00:00 [migration/1]
+root         8     2  0 12:57 ?        00:00:00 [migration/1]
+root         9     2  0 12:57 ?        00:00:01 [ksoftirqd/1]
+root        10     2  0 12:57 ?        00:00:00 [watchdog/1]
+root        11     2  0 12:57 ?        00:00:00 [migration/2]
+root        12     2  0 12:57 ?        00:00:00 [migration/2]
+root        13     2  0 12:57 ?        00:00:01 [ksoftirqd/2]
+root        14     2  0 12:57 ?        00:00:00 [watchdog/2]
+root        15     2  0 12:57 ?        00:00:00 [migration/3]
+root        16     2  0 12:57 ?        00:00:00 [migration/3]
+root        17     2  0 12:57 ?        00:00:00 [ksoftirqd/3]
+root        18     2  0 12:57 ?        00:00:00 [watchdog/3]
+root        19     2  0 12:57 ?        00:00:00 [events/0]
+root        20     2  0 12:57 ?        00:00:00 [events/1]
+root        21     2  0 12:57 ?        00:00:01 [events/2]
+root        22     2  0 12:57 ?        00:00:00 [events/3]
+root        23     2  0 12:57 ?        00:00:00 [cgroup]
+root        24     2  0 12:57 ?        00:00:00 [khelper]
+root        25     2  0 12:57 ?        00:00:00 [netns]
+root        26     2  0 12:57 ?        00:00:00 [async/mgr]
+root        27     2  0 12:57 ?        00:00:00 [pm]
+root        28     2  0 12:57 ?        00:00:00 [sync_supers]
+root        29     2  0 12:57 ?        00:00:00 [bdi-default]
+root        30     2  0 12:57 ?        00:00:00 [kintegrityd/0]
+root        31     2  0 12:57 ?        00:00:00 [kintegrityd/1]
+root        32     2  0 12:57 ?        00:00:00 [kintegrityd/2]
+root        33     2  0 12:57 ?        00:00:00 [kintegrityd/3]
+root        34     2  0 12:57 ?        00:00:01 [kblockd/0]
+root        35     2  0 12:57 ?        00:00:01 [kblockd/1]
+root        36     2  0 12:57 ?        00:00:01 [kblockd/2]
+root        37     2  0 12:57 ?        00:00:00 [kblockd/3]
+root        38     2  0 12:57 ?        00:00:00 [kacpid]
+root        39     2  0 12:57 ?        00:00:00 [kacpi_notify]
+root        40     2  0 12:57 ?        00:00:00 [kacpi_hotplug]
+root        41     2  0 12:57 ?        00:00:00 [ata/0]
+root        42     2  0 12:57 ?        00:00:00 [ata/1]
+root        43     2  0 12:57 ?        00:00:00 [ata/2]
+root        44     2  0 12:57 ?        00:00:00 [ata/3]
+root        45     2  0 12:57 ?        00:00:00 [ata_aux]
+root        46     2  0 12:57 ?        00:00:00 [ksuspend_usbd]
+root        47     2  0 12:57 ?        00:00:00 [khubd]
+root        48     2  0 12:57 ?        00:00:00 [kseriod]
+root        49     2  0 12:57 ?        00:00:00 [md/0]
+root        50     2  0 12:57 ?        00:00:00 [md/1]
+root        51     2  0 12:57 ?        00:00:00 [md/2]
+root        52     2  0 12:57 ?        00:00:00 [md/3]
+root        53     2  0 12:57 ?        00:00:00 [md_misc/0]
+root        54     2  0 12:57 ?        00:00:00 [md_misc/1]
+root        55     2  0 12:57 ?        00:00:00 [md_misc/2]
+root        56     2  0 12:57 ?        00:00:00 [md_misc/3]
+root        57     2  0 12:57 ?        00:00:00 [khungtaskd]
+root        58     2  0 12:57 ?        00:00:00 [kswapd0]
+root        59     2  0 12:57 ?        00:00:00 [ksmd]
+root        60     2  0 12:57 ?        00:00:00 [khugepaged]
+root        61     2  0 12:57 ?        00:00:00 [aio/0]
+root        62     2  0 12:57 ?        00:00:00 [aio/1]
+root        63     2  0 12:57 ?        00:00:00 [aio/2]
+root        64     2  0 12:57 ?        00:00:00 [aio/3]
+root        65     2  0 12:57 ?        00:00:00 [crypto/0]
+root        66     2  0 12:57 ?        00:00:00 [crypto/1]
+root        67     2  0 12:57 ?        00:00:00 [crypto/2]
+root        68     2  0 12:57 ?        00:00:00 [crypto/3]
+root        73     2  0 12:57 ?        00:00:00 [kthrotld/0]
+root        74     2  0 12:57 ?        00:00:00 [kthrotld/1]
+root        75     2  0 12:57 ?        00:00:00 [kthrotld/2]
+root        76     2  0 12:57 ?        00:00:00 [kthrotld/3]
+root        77     2  0 12:57 ?        00:00:00 [pciehpd]
+root        79     2  0 12:57 ?        00:00:00 [kpsmoused]
+root        80     2  0 12:57 ?        00:00:00 [usbhid_resumer]
+root       110     2  0 12:57 ?        00:00:00 [kstriped]
+root       248     2  0 12:57 ?        00:00:00 [scsi_eh_0]
+root       249     2  0 12:57 ?        00:00:00 [scsi_eh_1]
+root       322     2  0 12:57 ?        00:00:00 [mpt_poll_0]
+root       323     2  0 12:57 ?        00:00:00 [mpt/0]
+root       324     2  0 12:57 ?        00:00:00 [scsi_eh_2]
+root       366     2  0 12:57 ?        00:00:02 [jbd2/sda1-8]
+root       367     2  0 12:57 ?        00:00:00 [ext4-dio-unwrit]
+root       368     2  0 12:57 ?        00:00:00 [ext4-dio-unwrit]
+root       369     2  0 12:57 ?        00:00:00 [ext4-dio-unwrit]
+root       370     2  0 12:57 ?        00:00:00 [ext4-dio-unwrit]
+root       399     2  0 12:57 ?        00:00:02 [flush-8:0]
+root       408     2  0 12:57 ?        00:00:00 [kauditd]
+root       464     1  0 12:57 ?        00:00:00 /sbin/udevd -d
+root       816     2  0 12:57 ?        00:00:00 [vmmemctl]
+root      1338     1  0 12:57 ?        00:00:00 /sbin/portreserve
+root      1388     1  0 12:57 ?        00:00:00 /sbin/rsyslogd -i /var/run/syslogd.pid -c 5
+root      1491     1  0 12:57 ?        00:00:00 irqbalance
+root      1506     1  0 12:57 ?        00:00:06 /usr/sbin/vmtoolsd
+rpc       1520     1  0 12:57 ?        00:00:00 rpcbind
+jboss     1594     1  0 12:57 ?        00:00:00 /bin/sh /usr/local/jboss/bin/run.sh -c default
+dbus      1620     1  0 12:58 ?        00:00:00 dbus-daemon --system
+root      1635     1  0 12:58 ?        00:00:00 NetworkManager --pid-file=/var/run/NetworkManager/NetworkManager.pid
+root      1638     1  0 12:58 ?        00:00:00 /usr/sbin/modem-manager
+avahi     1647     1  0 12:58 ?        00:00:06 avahi-daemon: running [linux.local]
+avahi     1648  1647  0 12:58 ?        00:00:00 avahi-daemon: chroot helper
+rpcuser   1665     1  0 12:58 ?        00:00:00 rpc.statd
+root      1700     2  0 12:58 ?        00:00:00 [rpciod/0]
+root      1701     2  0 12:58 ?        00:00:00 [rpciod/1]
+root      1702     2  0 12:58 ?        00:00:00 [rpciod/2]
+root      1703     2  0 12:58 ?        00:00:00 [rpciod/3]
+root      1711  1635  0 12:58 ?        00:00:00 /sbin/dhclient -d -4 -sf /usr/libexec/nm-dhcp-client.action -pf /var/run/dhclient-eth3.pid -lf /var/lib/dhclient/dhclient-5fd5bfc5-6ce2-498a-b7a8-a73cbba9d65d-eth3.lease -cf /var/run/nm-dhclient-eth3.conf eth3
+root      1713     1  0 12:58 ?        00:00:00 rpc.idmapd
+root      1737     1  0 12:58 ?        00:00:00 /usr/sbin/acpid
+68        1747     1  0 12:58 ?        00:00:00 hald
+root      1748  1747  0 12:58 ?        00:00:00 hald-runner
+root      1749     1  0 12:58 ?        00:00:00 /usr/sbin/wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -B -u -f /var/log/wpa_supplicant.log -P /var/run/wpa_supplicant.pid
+root      1828  1748  0 12:58 ?        00:00:00 hald-addon-input: Listening on /dev/input/event2 /dev/input/event0
+68        1838  1748  0 12:58 ?        00:00:00 hald-addon-acpi: listening on acpid socket /var/run/acpid.socket
+jboss     1887  1594  1 12:58 ?        00:01:45 /usr/java/jdk1.7.0_01/bin/java -server -Xms128m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djava.net.preferIPv4Stack=true -Dprogram.name=run.sh -Djava.library.path=/usr/local/jboss/bin/native/lib64 -Djava.endorsed.dirs=/usr/local/jboss/lib/endorsed -classpath /usr/local/jboss/bin/run.jar:/usr/java/jdk1.7.0_01/lib/tools.jar org.jboss.Main -c default
+root      1905     1  0 12:58 ?        00:00:00 automount --pid-file /var/run/autofs.pid
+root      1931     1  0 12:58 ?        00:00:00 /usr/sbin/sshd
+ntp       1939     1  0 12:58 ?        00:00:00 ntpd -u ntp:ntp -p /var/run/ntpd.pid -g
+root      1975     1  0 12:58 ?        00:00:00 /bin/sh /usr/bin/mysqld_safe --datadir=/var/lib/mysql --socket=/var/lib/mysql/mysql.sock --pid-file=/var/run/mysqld/mysqld.pid --basedir=/usr --user=mysql
+mysql     2064  1975  0 12:58 ?        00:00:02 /usr/libexec/mysqld --basedir=/usr --datadir=/var/lib/mysql --user=mysql --log-error=/var/log/mysqld.log --pid-file=/var/run/mysqld/mysqld.pid --socket=/var/lib/mysql/mysql.sock
+root      2129     1  0 12:58 ?        00:00:00 /usr/sbin/abrtd
+root      2137     1  0 12:58 ?        00:00:00 abrt-dump-oops -d /var/spool/abrt -rwx /var/log/messages
+root      2145     1  0 12:58 ?        00:00:00 crond
+root      2156     1  0 12:58 ?        00:00:00 /usr/sbin/atd
+root      2178     1  0 12:58 ?        00:00:00 /usr/sbin/gdm-binary -nodaemon
+root      2185     1  0 12:58 tty2     00:00:00 /sbin/mingetty /dev/tty2
+root      2187     1  0 12:58 tty3     00:00:00 /sbin/mingetty /dev/tty3
+root      2189     1  0 12:58 tty4     00:00:00 /sbin/mingetty /dev/tty4
+root      2191     1  0 12:58 tty5     00:00:00 /sbin/mingetty /dev/tty5
+root      2193     1  0 12:58 tty6     00:00:00 /sbin/mingetty /dev/tty6
+root      2200   464  0 12:58 ?        00:00:00 /sbin/udevd -d
+root      2201   464  0 12:58 ?        00:00:00 /sbin/udevd -d
+root      2216  2178  0 12:58 ?        00:00:00 /usr/libexec/gdm-simple-slave --display-id /org/gnome/DisplayManager/Display1 --force-active-vt
+root      2218  2216  0 12:58 tty1     00:00:01 /usr/bin/Xorg :0 -nr -verbose -audit 4 -auth /var/run/gdm/auth-for-gdm-7M6tZV/database -nolisten tcp vt1
+root      2253     1  0 12:58 ?        00:00:00 auditd
+root      2283     1  0 12:58 ?        00:00:00 /usr/sbin/console-kit-daemon --no-daemon
+gdm       2353     1  0 12:58 ?        00:00:00 /usr/bin/dbus-launch --exit-with-session
+gdm       2354     1  0 12:58 ?        00:00:00 /bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+gdm       2356  2216  0 12:58 ?        00:00:00 /usr/bin/gnome-session --autostart=/usr/share/gdm/autostart/LoginWindow/
+root      2359     1  0 12:58 ?        00:00:00 /usr/libexec/devkit-power-daemon
+gdm       2365     1  0 12:58 ?        00:00:00 /usr/libexec/gconfd-2
+gdm       2380  2356  0 12:58 ?        00:00:00 /usr/libexec/at-spi-registryd
+gdm       2381     1  0 12:58 ?        00:00:00 /usr/libexec/gnome-settings-daemon --gconf-prefix=/apps/gdm/simple-greeter/settings-manager-plugins
+gdm       2384     1  0 12:58 ?        00:00:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=12
+gdm       2392     1  0 12:58 ?        00:00:00 /usr/libexec/gvfsd
+gdm       2393  2356  0 12:58 ?        00:00:00 metacity
+gdm       2394  2356  0 12:58 ?        00:00:00 plymouth-log-viewer --icon
+gdm       2396  2356  0 12:58 ?        00:00:00 /usr/libexec/gdm-simple-greeter
+gdm       2397  2356  0 12:58 ?        00:00:00 gnome-power-manager
+gdm       2398  2356  0 12:58 ?        00:00:00 /usr/libexec/polkit-gnome-authentication-agent-1
+root      2400     1  0 12:58 ?        00:00:00 /usr/libexec/polkit-1/polkitd
+gdm       2424     1  0 12:58 ?        00:00:00 /usr/bin/pulseaudio --start --log-target=syslog
+rtkit     2426     1  0 12:58 ?        00:00:00 /usr/libexec/rtkit-daemon
+root      2432  2216  0 12:59 ?        00:00:00 pam: gdm-password
+root      2437  1931  0 12:59 ?        00:00:02 sshd: root@notty 
+root      2490  2437  0 12:59 ?        00:00:00 bash -c cd '/tmp' && java  -jar slave.jar
+root      2499  2490  0 12:59 ?        00:00:08 java -jar slave.jar
+root      6913  1931  0 14:36 ?        00:00:00 sshd: root@pts/0 
+root      6917  6913  0 14:36 pts/0    00:00:00 -bash
+root      9037  1931 23 15:14 ?        00:00:00 sshd: root@notty 
+root      9090  9037  0 15:14 ?        00:00:00 bash -c cd '/tmp' && java  -jar slave.jar
+root      9099  9090 67 15:14 ?        00:00:02 java -jar slave.jar
+root      9121  9099  0 15:14 ?        00:00:00 /bin/sh -xe /tmp/hudson3307591126361093448.sh
+root      9123  9121  0 15:14 ?        00:00:00 ps -aef
+Finished: SUCCESS

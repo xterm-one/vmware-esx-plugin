@@ -1,0 +1,25 @@
+Connecting to builder
+Failed to connect to port 135 of builder. Is Windows firewall blocking this port? Or did you disable DCOM service?
+ERROR: Message not found for errorCode: 0x8001FFFF
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0morg.jinterop.dcom.common.JIException: Message not found for errorCode: 0x8001FFFF
+	at org.jinterop.dcom.core.JIComServer.init(JIComServer.java:546)
+	at org.jinterop.dcom.core.JIComServer.initialise(JIComServer.java:458)
+	at org.jinterop.dcom.core.JIComServer.<init>(JIComServer.java:427)
+	at org.jvnet.hudson.wmi.WMI.connect(WMI.java:59)
+	at hudson.os.windows.ManagedWindowsServiceLauncher.launch(ManagedWindowsServiceLauncher.java:219)
+	at hudson.slaves.SlaveComputer$1.call(SlaveComputer.java:200)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:364)
+	at sun.nio.ch.Net.connect(Net.java:356)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:623)
+	at java.nio.channels.SocketChannel.open(SocketChannel.java:184)
+	at org.jinterop.dcom.transport.JIComTransport.attach(JIComTransport.java:98)
+	at rpc.Stub.attach(Stub.java:104)
+	at org.jinterop.dcom.core.JIComServer.init(JIComServer.java:523)
+	... 10 more

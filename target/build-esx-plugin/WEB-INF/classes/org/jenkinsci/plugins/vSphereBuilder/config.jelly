@@ -1,0 +1,38 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+    <f:entry title="${%vSphere Host}" help="/plugin/vsphere-cloud/vsHost.html">
+        <f:textbox field="vsHost" />
+    </f:entry>
+
+    <f:entry title="${%Virtual Machine Name}" help="/plugin/vsphere-cloud/vmName.html">
+        <f:textbox field="vmName" />
+    </f:entry>
+
+	<f:entry title="${%Snapshot Name}" help="/plugin/vsphere-cloud/snapname.html">
+        <f:textbox field="snapname" />
+    </f:entry>
+
+    <f:entry title="${%Username}" help="/plugin/vsphere-cloud/username.html">
+        <f:textbox field="username" />
+    </f:entry>
+
+    <f:entry title="${%Password}" help="/plugin/vsphere-cloud/password.html">
+        <f:password field="password" />
+    </f:entry>
+
+    <f:entry title="${%Pause After Start}" help="/plugin/vsphere-cloud/pause_after_start.html">
+        <f:textbox field="waitpause" />
+    </f:entry>
+
+	<f:entry title="${%Wait For VM Tools}" help="/plugin/vsphere-cloud/waitForVMTools.html">
+		<f:checkbox field="waitfortools"/>
+	</f:entry>
+
+	<f:entry name="runOrder" field="runOrder" title="${%Run Order}" help="/plugin/vsphere-cloud/runOrder.html">
+		<f:select/>
+	</f:entry>
+ 
+    <f:validateButton title="${%Test Connection}" progress="${%Testing...}" method="testConnection" 
+					  with="vsHost,vmName,snapname,username,password,waitfortools,waitpause"/>
+
+</j:jelly>

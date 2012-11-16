@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Built-By: xterm
+Created-By: Apache Maven
+Build-Jdk: 1.7.0_02
+Extension-Name: build-esx-plugin
+Specification-Title: Integrates Jenkins with a ESX server to revert vi
+ rtual machines to snapshot
+Implementation-Title: build-esx-plugin
+Implementation-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: build-esx-plugin
+Long-Name: VMWare ESX Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/vSphere+Cloud+Plugin
+Plugin-Version: 1.0
+Hudson-Version: 1.488
+Jenkins-Version: 1.488
+Plugin-Developers: Phil Soliz:xterm:phillip.soliz@mantech.com
+
