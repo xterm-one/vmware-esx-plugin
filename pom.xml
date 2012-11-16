@@ -13,20 +13,20 @@
     <packaging>hpi</packaging>
     <name>VMWare ESX Plugin</name>
     <description>Integrates Jenkins with a ESX server to revert virtual machines to snapshot</description>
-    <url>https://wiki.jenkins-ci.org/display/JENKINS/vSphere+Cloud+Plugin</url>
+    <url>https://wiki.jenkins-ci.org/display/JENKINS/vmware-esx-plugin</url>
 
     <developers>
         <developer>
             <id>xterm</id>
             <name>Phil Soliz</name>
-            <email>phillip.soliz@mantech.com</email>
+            <email>phil.soliz@gmail.com</email>
         </developer>
     </developers>
     
     <scm>
-        <connection>scm:git:https://github.com/jenkinsci/vsphere-cloud-plugin.git</connection>
-        <developerConnection>scm:git:https://git@github.com/jenkinsci/vsphere-cloud-plugin.git</developerConnection>
-        <url>https://github.com/jenkinsci/vsphere-cloud-plugin</url>
+        <connection>scm:git:https://github.com/jenkinsci/vmware-esx-plugin.git</connection>
+        <developerConnection>scm:git:https://git@github.com/jenkinsci/vmware-esx-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/vmware-esx-plugin</url>
     </scm>    
   
     <properties>
